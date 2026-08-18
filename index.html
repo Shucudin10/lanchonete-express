@@ -98,3 +98,47 @@
             </div>
           </div>
         </div>
+
+        <div class="row g-4">
+            <!-- Quantidade -->
+          <div class="col-sm-6">
+            <div class="field-block mb-0">
+              <label class="field-label"><i class="bi bi-stack"></i> Quantidade</label>
+              <div class="input-group qty-group">
+                <button class="btn qty-btn" type="button" id="btn-menos">−</button>
+                <input type="number" id="input-qtd" class="form-control text-center order-input" value="1" min="1" max="20">
+                <button class="btn qty-btn" type="button" id="btn-mais">+</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Entrega -->
+          <div class="col-sm-6">
+            <div class="field-block mb-0">
+              <label for="select-entrega" class="field-label"><i class="bi bi-bicycle"></i> Tipo de entrega</label>
+              <select class="form-select order-input" id="select-entrega">
+                <option value="0" data-nome="Retirada no Local">Retirada no local (grátis)</option>
+                <option value="7.00" data-nome="Tele-entrega" selected>Tele-entrega (+R$ 7,00)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cupom -->
+        <div class="field-block mb-0">
+          <label for="input-cupom" class="field-label"><i class="bi bi-ticket-perforated"></i> Cupom de desconto</label>
+          <div class="input-group">
+            <input type="text" id="input-cupom" class="form-control order-input" placeholder="Ex: BEMVINDO10">
+            <button class="btn btn-apply-cupom" type="button" id="btn-cupom">Aplicar cupom</button>
+          </div>
+          <div id="cupom-feedback" class="cupom-feedback d-none"></div>
+        </div>
+
+       </div>
+      </div>
+
+      <div id="save-feedback" class="save-feedback d-none mt-3"></div>
+
+    </div>
+    
+
