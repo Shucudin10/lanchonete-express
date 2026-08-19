@@ -1,0 +1,47 @@
+LANCHONETE EXPRESS - CALCULADORA DE PEDIDOS
+Roteiro Pratico 03 - ProgWeb 2
+
+O QUE FOI FEITO EM CADA PASSO:
+
+PASSO 1 - Estrutura e CDNs
+- Criado o index.html
+- Incluidos Bootstrap 5, Bootstrap Icons e jQuery via CDN
+- Codigo JS separado no arquivo app.js
+- Estilo separado no arquivo style.css
+
+PASSO 2 - Formulario do pedido
+- Select com as opcoes de lanche principal (com preco em cada option)
+- 4 adicionais opcionais em formato switch (queijo, bacon, batata, refrigerante)
+- Campo de quantidade com botoes de + e -
+- Select com tipo de entrega (retirada ou tele-entrega)
+- Campo de cupom de desconto com botao para aplicar
+
+PASSO 3 - Calculo do total
+- Funcao calcularTotal() que le todos os campos
+- Usa parseFloat e parseInt com fallback || 0 para evitar erro
+- Soma os adicionais marcados usando .each()
+- Calcula subtotal, taxa de entrega, desconto e total geral
+- Atualiza a tela em tempo real (sem recarregar a pagina)
+- Formata os valores em R$ X,XX
+
+PASSO 4 - Cupom de desconto
+- Lista de cupons validos com percentual de desconto
+- Ao clicar em "Aplicar cupom", valida o codigo digitado
+- Mostra mensagem de sucesso ou erro
+- Desconto aparece no resumo quando o cupom e valido
+
+PASSO 5 - LocalStorage
+- Ao clicar em "Finalizar pedido", salva os dados no localStorage
+- Ao recarregar a pagina (F5), os dados salvos sao restaurados automaticamente
+- Botao "Limpar pedido" apaga os dados salvos e reseta o formulario
+
+PASSO 6 - Visual com Bootstrap
+- Layout em duas colunas (formulario + resumo)
+- Formulario dentro de card do Bootstrap
+- Resumo em lista (list-group) estilizado como um recibo
+- Total geral destacado
+- Layout responsivo (funciona no celular tambem)
+
+PASSO 7 - Publicacao
+- Arquivos commitados no GitHub
+- Publicado com GitHub Pages
