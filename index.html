@@ -100,6 +100,7 @@
         </div>
 
         <div class="row g-4">
+
             <!-- Quantidade -->
           <div class="col-sm-6">
             <div class="field-block mb-0">
@@ -140,5 +141,76 @@
       <div id="save-feedback" class="save-feedback d-none mt-3"></div>
 
     </div>
-    
 
+     <!-- ================= COLUNA DIREITA — RESUMO / TICKET ================= -->
+    <div class="col-lg-5">
+      <div class="ticket-wrap">
+        <div class="ticket">
+          <div class="ticket-head">
+            <div class="ticket-eyebrow">Passo 2</div>
+            <div class="ticket-title">Resumo do pedido</div>
+            <div class="ticket-sub">atualizado em tempo real</div>
+          </div>
+
+          <div class="ticket-line" id="linha-item">
+            <span class="tl-label">Item</span>
+            <span class="tl-value" id="resumo-item">—</span>
+          </div>
+
+          <ul class="list-group list-group-flush ticket-list">
+            <li class="list-group-item">
+              <span>Lanche unitário</span>
+              <span id="resumo-lanche">R$ 0,00</span>
+            </li>
+            <li class="list-group-item">
+              <span>Adicionais (un.)</span>
+              <span id="resumo-adicionais">R$ 0,00</span>
+            </li>
+            <li class="list-group-item">
+              <span>Quantidade</span>
+              <span id="resumo-qtd">×1</span>
+            </li>
+            <li class="list-group-item ticket-divider"><span>Subtotal</span><span id="resumo-subtotal">R$ 0,00</span></li>
+            <li class="list-group-item">
+              <span>Taxa de entrega</span>
+              <span id="resumo-entrega">R$ 0,00</span>
+            </li>
+            <li id="linha-desconto" class="list-group-item d-none text-desconto">
+              <span>Desconto (cupom)</span>
+              <span id="resumo-desconto">− R$ 0,00</span>
+            </li>
+          </ul>
+
+          <div class="ticket-total">
+            <span>Total a pagar</span>
+            <span id="total-geral">R$ 0,00</span>
+          </div>
+
+          <div class="ticket-actions">
+            <button class="btn btn-finalizar w-100" id="btn-finalizar">
+              <i class="bi bi-check-circle"></i> Finalizar &amp; salvar pedido
+            </button>
+            <button class="btn btn-limpar w-100 mt-2" id="btn-limpar">
+              <i class="bi bi-trash3"></i> Limpar pedido &amp; storage
+            </button>
+          </div>
+
+          <div class="ticket-stamp" id="ticket-stamp">salvo</div>
+        </div>
+        <div class="ticket-zigzag"></div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="footer-note text-center py-4">
+  Roteiro Prático 03 — Bootstrap 5 · jQuery · LocalStorage — CST em Sistemas para a Internet, IFSC Garopaba
+</footer>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<!-- App logic -->
+<script src="app.js"></script>
+</body>
+</html>
